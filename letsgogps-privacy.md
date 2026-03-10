@@ -1,7 +1,7 @@
-  ---                             
-  layout: default                                           
-  title: Privacy Policy
-  ---      
+---                             
+layout: default                                           
+title: Privacy Policy
+---      
  # Privacy Policy / 隱私政策
 
   **Last updated / 最後更新：2026-03-10**
