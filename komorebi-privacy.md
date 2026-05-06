@@ -5,7 +5,7 @@ title: Komorebi - Privacy Policy
 
 # Privacy Policy / 隱私權政策
 
-**Last updated / 最後更新：2026-04-07**
+**Last updated / 最後更新：2026-05-06**
 
 ---
 
@@ -54,7 +54,7 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 ### Contact
 
 If you have any questions about this Privacy Policy, please contact us at:
-**moooo.works.app@gmail.com**
+**moooo.works@gmail.com**
 
 ---
 
@@ -103,4 +103,4 @@ Komorebi（「本應用程式」）由 moooo_works 開發。本政策說明您�
 ### 聯絡方式
 
 如您對本隱私權政策有任何疑問，請透過以下方式與我們聯絡：
-**moooo.works.app@gmail.com**
+**moooo.works@gmail.com**
