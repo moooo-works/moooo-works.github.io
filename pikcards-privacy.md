@@ -62,7 +62,7 @@ We may update this policy from time to time. The "Last updated" date at the top 
 
 ### Contact
 
-For questions about this policy, contact: **jsl1122@gmail.com**
+For questions about this policy, contact: **moooo.works@gmail.com**
 
 ---
 
@@ -119,4 +119,4 @@ PikCards（「本應用程式」）由 moooo_works 開發。本政策說明您�
 
 ### 聯絡方式
 
-如有關於本政策的問題，請聯絡：**jsl1122@gmail.com**
+如有關於本政策的問題，請聯絡：**moooo.works@gmail.com**
