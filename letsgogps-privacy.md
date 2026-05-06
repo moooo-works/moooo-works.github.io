@@ -5,7 +5,7 @@ title: Privacy Policy
                                                                                                                                                                                      
 # Privacy Policy / 隱私政策                                                                                                                                                        
                                                             
-**Last updated / 最後更新：2026-03-10**                                                                                                                                            
+**Last updated / 最後更新：2026-05-06**                                                                                                                                            
    
 ---                                                                                                                                                                                
                                                             
@@ -51,7 +51,7 @@ We may update this policy. Continued use of the App after changes constitutes ac
    
 ### Contact                                                                                                                                                                        
                                                             
-For questions, contact: **your@email.com**                                                                                                                                         
+For questions, contact: **moooo.works@email.com**                                                                                                                                         
    
 ---                                                                                                                                                                                
                                                             
@@ -97,4 +97,4 @@ Let's Go GPS（以下簡稱「本應用程式」）由 moooo_works 開發。本�
                                                             
 ### 聯絡方式                                                                                                                                                                       
                                                             
-如有疑問，請聯絡：**jsl1122@gmail.com**  
+如有疑問，請聯絡：**moooo.works@gmail.com**  
