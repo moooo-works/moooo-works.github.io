@@ -5,7 +5,7 @@ title: ViewBoost Privacy Policy
 
 # Privacy Policy / 隱私權政策
 
-**Last updated / 最後更新：2026-04-02**
+**Last updated / 最後更新：2026-05-06**
 
 ---
 
@@ -75,7 +75,7 @@ We may update this policy. Continued use of the App after changes constitutes ac
 
 ### Contact
 
-For questions or data requests, contact: **jsl1122@gmail.com**
+For questions or data requests, contact: **moooo.works@gmail.com**
 
 ---
 
@@ -145,4 +145,4 @@ ViewBoost（以下簡稱「本應用程式」）由 moooo_works 開發。本政�
 
 ### 聯絡方式
 
-如有疑問或資料相關請求，請聯絡：**jsl1122@gmail.com**
+如有疑問或資料相關請求，請聯絡：**moooo.works@gmail.com**
