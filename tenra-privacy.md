@@ -29,10 +29,11 @@ The App uses **Google Firebase Analytics** to collect anonymized usage statistic
 
 ### Purchases
 
-Subscriptions and one-time purchases are processed by **Google Play**. We use **RevenueCat** to manage purchase status; it receives purchase tokens and an anonymous app user ID — never your name, email, or payment details (those stay with Google Play).
+Subscriptions and one-time purchases are processed by the app store you purchased from — the **Apple App Store** or **Google Play**. We use **RevenueCat** to manage purchase status; it receives purchase tokens/receipts and an anonymous app user ID — never your name, email, or payment details (those stay with Apple or Google).
 
 - **RevenueCat** — [Privacy Policy](https://www.revenuecat.com/privacy)
 - **Google Play Billing** — [Google Privacy Policy](https://policies.google.com/privacy)
+- **Apple App Store (In-App Purchase)** — [Apple Privacy Policy](https://www.apple.com/legal/privacy/)
 
 ### Information We Do NOT Collect
 
@@ -89,10 +90,11 @@ Tenra（「本應用程式」）是由 moooo_works 開發的虛擬底片攝影�
 
 ### 購買
 
-訂閱與買斷購買由 **Google Play** 處理。我們使用 **RevenueCat** 管理購買狀態；其僅接收購買憑證與匿名應用程式用戶 ID——絕不包含您的姓名、電子郵件或付款資料（這些資訊由 Google Play 保管）。
+訂閱與買斷購買由您購買時使用的應用程式商店處理——**Apple App Store** 或 **Google Play**。我們使用 **RevenueCat** 管理購買狀態；其僅接收購買憑證／收據與匿名應用程式用戶 ID——絕不包含您的姓名、電子郵件或付款資料（這些資訊由 Apple 或 Google 保管）。
 
 - **RevenueCat** — [隱私權政策](https://www.revenuecat.com/privacy)
 - **Google Play 帳款服務** — [Google 隱私權政策](https://policies.google.com/privacy)
+- **Apple App Store（App 內購買）** — [Apple 隱私權政策](https://www.apple.com/legal/privacy/)
 
 ### 我們不收集的資料
 
