@@ -21,6 +21,9 @@ When reporting an issue, it helps to include:
 
 ### Common Questions
 
+**Some of my older rolls show as "Archived" — are they deleted?**
+No. Your photos are safely stored and never deleted. The free plan shows your latest 6 rolls; older rolls are archived but fully preserved. Upgrade to Tenra Pro to revisit your entire library anytime.
+
 **My photos disappeared after uninstalling the app.**
 Photos are stored locally on your device inside the App. Uninstalling the App permanently deletes them. Please export the photos you want to keep before uninstalling.
 
@@ -56,6 +59,9 @@ Canceling takes effect at the end of the current billing period.
 - 發生了什麼事，以及重現步驟
 
 ### 常見問題
+
+**比較舊的底片捲顯示「已典藏」——是被刪除了嗎？**
+沒有。你的照片安全保存、絕不會被刪除。免費版底片庫顯示最近 6 捲，更早的捲會典藏保留。升級 Tenra Pro 即可隨時回顧完整底片庫。
 
 **解除安裝後照片不見了。**
 照片儲存於裝置本機的 App 內。解除安裝 App 會永久刪除照片，請在解除安裝前先匯出想保留的照片。
