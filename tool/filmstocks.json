@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "_comment": [
+    "FilmStock static data (Spec §2.1 fields, §3.5 v1 list). Data-driven:",
+    "new stocks are added HERE + a HALD PNG, never by changing engine/.",
+    "grain/halation parameter values are placeholders until W8-9 校色.",
+    "TODO(校色): replace placeholder lutAsset with real graded LUTs:",
+    "  cp200        -> assets/luts/cp200.png",
+    "  gold200        -> assets/luts/gold200.png",
+    "  hp5plus        -> assets/luts/hp5plus.png",
+    "  c100           -> assets/luts/c100.png",
+    "  c200           -> assets/luts/c200.png",
+    "  portra400      -> assets/luts/portra400.png",
+    "  ektar100       -> assets/luts/ektar100.png",
+    "  cinestill800t  -> assets/luts/cinestill800t.png"
+  ],
+  "filmStocks": [
+    {
+      "id": "gold200",
+      "displayName": "Kodak Gold 200",
+      "iso": 200,
+      "type": "colorNegative",
+      "lutAsset": "assets/luts/gold200.png",
+      "grain": {
+        "size": "fine",
+        "intensity": 0.28
+      },
+      "halation": null,
+      "isPremium": false,
+      "sortOrder": 1,
+      "personality": {
+        "zh": "暖黃懷舊,日常裡的陽光感",
+        "en": "Warm golden nostalgia — everyday sunshine",
+        "ja": "暖かい黄色のノスタルジー、日常の陽だまり",
+        "ko": "따뜻한 노란빛의 향수, 일상의 햇살"
+      }
+    },
+    {
+      "id": "hp5plus",
+      "displayName": "Ilford HP5 Plus",
+      "iso": 400,
+      "type": "bw",
+      "lutAsset": "assets/luts/hp5plus.png",
+      "grain": {
+        "size": "medium",
+        "intensity": 0.46
+      },
+      "halation": null,
+      "isPremium": false,
+      "sortOrder": 2,
+      "personality": {
+        "zh": "經典黑白,顆粒分明的街頭味",
+        "en": "Classic black & white with bold grain",
+        "ja": "クラシックな白黒、粒子のきいたストリート感",
+        "ko": "클래식 흑백, 거친 입자의 스트리트 감성"
+      }
+    },
+    {
+      "id": "c200",
+      "displayName": "Fujifilm C200",
+      "iso": 200,
+      "type": "colorNegative",
+      "lutAsset": "assets/luts/fujic200.png",
+      "grain": {
+        "size": "fine",
+        "intensity": 0.28
+      },
+      "halation": null,
+      "isPremium": false,
+      "sortOrder": 3,
+      "personality": {
+        "zh": "清透日常,微偏綠的清爽色",
+        "en": "Clean and airy, a fresh green tint for daily life",
+        "ja": "透明感のある日常、ほんのり緑がかった爽やかさ",
+        "ko": "맑고 투명한 일상, 살짝 초록빛 도는 청량감"
+      }
+    },
+    {
+      "id": "portra400",
+      "displayName": "Kodak Portra 400",
+      "iso": 400,
+      "type": "colorNegative",
+      "lutAsset": "assets/luts/portra400.png",
+      "grain": {
+        "size": "medium",
+        "intensity": 0.26
+      },
+      "halation": null,
+      "isPremium": true,
+      "sortOrder": 4,
+      "personality": {
+        "zh": "柔和膚色,低反差的溫柔 — 拍人像的首選",
+        "en": "Soft skin tones, gentle contrast — made for portraits",
+        "ja": "やわらかな肌色と低コントラスト — ポートレート向き",
+        "ko": "부드러운 피부톤과 낮은 대비 — 인물 사진의 정석"
+      }
+    },
+    {
+      "id": "ektar100",
+      "displayName": "Kodak Ektar 100",
+      "iso": 100,
+      "type": "colorNegative",
+      "lutAsset": "assets/luts/ektar100.png",
+      "grain": {
+        "size": "extraFine",
+        "intensity": 0.16
+      },
+      "halation": null,
+      "isPremium": true,
+      "sortOrder": 5,
+      "personality": {
+        "zh": "高飽和豔麗,風景的顏色",
+        "en": "Vivid saturation — colors made for landscapes",
+        "ja": "鮮やかな高彩度、風景のための色",
+        "ko": "쨍한 고채도, 풍경을 위한 색"
+      }
+    },
+    {
+      "id": "cinestill800t",
+      "displayName": "CineStill 800T",
+      "iso": 800,
+      "type": "colorNegativeTungsten",
+      "lutAsset": "assets/luts/cinestill800t.png",
+      "grain": {
+        "size": "medium",
+        "intensity": 0.36
+      },
+      "halation": {
+        "threshold": 0.75,
+        "radius": 0.03,
+        "strength": 0.6
+      },
+      "isPremium": true,
+      "sortOrder": 6,
+      "coldLeak": true,
+      "personality": {
+        "zh": "鎢絲夜色,霓虹與路燈會發紅暈",
+        "en": "Tungsten nights — neon and streetlights bloom red",
+        "ja": "タングステンの夜、ネオンと街灯が赤くにじむ",
+        "ko": "텅스텐의 밤, 네온과 가로등이 붉게 번지는"
+      }
+    },
+    {
+      "id": "doublex",
+      "displayName": "Kodak Double-X",
+      "iso": 250,
+      "type": "bw",
+      "lutAsset": "assets/luts/doublex.png",
+      "grain": {
+        "size": "fine",
+        "intensity": 0.32
+      },
+      "halation": null,
+      "isPremium": true,
+      "sortOrder": 7,
+      "personality": {
+        "zh": "電影的黑白。銀鹽的深黑與高反差,拍什麼都像劇照。",
+        "en": "Cinema's black and white. Deep silver blacks — every frame a film still.",
+        "ja": "映画のモノクロ。銀塩の深い黒とハイコントラスト、どのコマもスチールのように。",
+        "ko": "영화의 흑백. 은염의 깊은 검정과 강한 대비 — 모든 컷이 스틸컷처럼."
+      }
+    },
+    {
+      "id": "fujic100",
+      "displayName": "Fujicolor 業務用100",
+      "iso": 100,
+      "type": "colorNegative",
+      "lutAsset": "assets/luts/fujic100.png",
+      "grain": {
+        "size": "fine",
+        "intensity": 0.24
+      },
+      "halation": null,
+      "isPremium": true,
+      "sortOrder": 8,
+      "personality": {
+        "zh": "業務用的樸實。不搶戲的空氣感綠調,日常拍起來剛剛好。",
+        "en": "The workhorse. Airy, understated greens — everyday life, rendered just right.",
+        "ja": "業務用の実直さ。主張しない空気感のグリーン、日常がちょうどよく写る。",
+        "ko": "업무용의 담백함. 나서지 않는 산뜻한 그린 톤 — 일상이 딱 알맞게 담깁니다."
+      }
+    }
+  ]
+}
