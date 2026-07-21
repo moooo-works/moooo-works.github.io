@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tenra — 底片相機與暗房 | Film Camera &amp; Darkroom</title>
+<meta name="description" content="Tenra 是一台裝在手機裡的底片相機：裝一捲底片、拍完 36 張、等待沖洗，才看得到照片。八款經典底片色調，附光暈、顆粒與漏光。iOS 與 Android 皆已上架。">
+<link rel="canonical" href="https://moooo-works.github.io/">
+<link rel="icon" type="image/png" href="assets/tenra/icon-192.png">
+<meta property="og:title" content="Tenra — 底片相機與暗房">
+<meta property="og:description" content="裝一捲底片，拍完 36 張，等它沖洗。手機裡的真實底片體驗。">
+<meta property="og:image" content="https://moooo-works.github.io/assets/tenra/04_04_reveal_roll.jpg">
+<meta property="og:url" content="https://moooo-works.github.io/">
+<meta property="og:type" content="website">
+<style>
+:root{
+  --bg:#0f0c09;
+  --bg-2:#171310;
+  --card:#1d1814;
+  --line:#332a22;
+  --amber:#e8a33d;
+  --amber-dim:#b97f2c;
+  --red:#c0392b;
+  --ink:#f2e9dc;
+  --ink-dim:#b0a494;
+  --radius:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  line-height:1.7;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--amber);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+
+/* film perforation strip */
+.perf{
+  height:26px;
+  background:
+    repeating-linear-gradient(90deg,
+      transparent 0 14px,
+      var(--bg-2) 14px 24px,
+      transparent 24px 38px);
+  background-color:#000;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+/* hero */
+header{padding:72px 0 56px;text-align:center;background:radial-gradient(ellipse 80% 60% at 50% -10%,#2a1f12 0%,var(--bg) 70%)}
+.icon{width:96px;height:96px;border-radius:22px;box-shadow:0 8px 40px rgba(232,163,61,.25)}
+h1{font-size:clamp(2.4rem,6vw,3.6rem);letter-spacing:.08em;margin:20px 0 4px;font-weight:700}
+.sub{color:var(--amber);font-size:.95rem;letter-spacing:.35em;text-transform:uppercase}
+.tagline{font-size:clamp(1.1rem,2.6vw,1.4rem);margin:26px auto 8px;max-width:34em;color:var(--ink)}
+.tagline-en{color:var(--ink-dim);font-size:.95rem;margin-bottom:34px}
+.badges{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.badge{
+  display:inline-flex;align-items:center;gap:10px;
+  background:#000;border:1px solid var(--line);border-radius:12px;
+  padding:12px 22px;min-height:52px;color:var(--ink);cursor:pointer;
+  transition:border-color .2s,box-shadow .2s;
+}
+.badge:hover{border-color:var(--amber);box-shadow:0 0 24px rgba(232,163,61,.18);text-decoration:none}
+.badge svg{width:26px;height:26px;flex:none}
+.badge small{display:block;font-size:.68rem;color:var(--ink-dim);line-height:1.2;text-align:left}
+.badge b{font-size:1rem;line-height:1.25;display:block;text-align:left}
+
+/* sections */
+section{padding:72px 0}
+section:nth-of-type(even){background:var(--bg-2)}
+h2{font-size:clamp(1.5rem,3.6vw,2rem);margin-bottom:8px;text-align:center}
+.lede{color:var(--ink-dim);text-align:center;max-width:38em;margin:0 auto 44px}
+
+/* filmstrip of screenshots */
+.strip{
+  display:flex;gap:20px;overflow-x:auto;padding:26px 24px;
+  background:#000;border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+  scroll-snap-type:x mandatory;
+}
+.strip figure{flex:0 0 auto;scroll-snap-align:center;text-align:center}
+.strip img{
+  width:min(240px,64vw);border-radius:6px;display:block;
+  border:1px solid var(--line);
+}
+.strip figcaption{margin-top:12px;font-size:.85rem;color:var(--ink-dim)}
+.strip figcaption b{color:var(--amber);font-weight:600;margin-right:.5em}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px}
+.step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.step .no{color:var(--amber);font-size:.8rem;letter-spacing:.2em}
+.step h3{margin:6px 0 8px;font-size:1.1rem}
+.step p{color:var(--ink-dim);font-size:.92rem}
+
+/* stocks */
+.stocks{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.stock{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:20px 22px;transition:border-color .2s}
+.stock:hover{border-color:var(--amber-dim)}
+.stock .meta{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+.stock h3{font-size:1.02rem;font-weight:600}
+.stock .iso{color:var(--ink-dim);font-size:.78rem;letter-spacing:.08em;flex:none}
+.stock p{color:var(--ink-dim);font-size:.9rem;margin-top:8px}
+.stock .pro{display:inline-block;font-size:.66rem;color:var(--bg);background:var(--amber);border-radius:4px;padding:1px 7px;margin-left:8px;vertical-align:2px;letter-spacing:.05em}
+
+/* footer */
+footer{padding:56px 0 64px;text-align:center;border-top:1px solid var(--line)}
+footer .links{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
+footer .links a{color:var(--ink-dim)}
+footer .links a:hover{color:var(--amber)}
+footer p{color:var(--ink-dim);font-size:.85rem}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <img class="icon" src="assets/tenra/icon-192.png" alt="Tenra app 圖示" width="96" height="96">
+    <p class="sub">Film Camera &amp; Darkroom</p>
+    <h1>Tenra</h1>
+    <p class="tagline">裝一捲底片，拍完 36 張，等它沖洗——<br>照片值得等待。</p>
+    <p class="tagline-en">A real film experience, in your pocket.</p>
+    <div class="badges">
+      <a class="badge" href="https://apps.apple.com/app/id6787303638" aria-label="於 App Store 下載 Tenra">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <span><small>Download on the</small><b>App Store</b></span>
+      </a>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.mooooworks.tenra" aria-label="於 Google Play 下載 Tenra">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+        <span><small>GET IT ON</small><b>Google Play</b></span>
+      </a>
+    </div>
+  </div>
+</header>
+
+<div class="perf" role="presentation"></div>
+
+<div class="strip" aria-label="App 畫面截圖">
+  <figure><img src="assets/tenra/01_01_load_film.jpg" alt="裝片畫面：選擇底片並裝入相機" loading="lazy" width="240"><figcaption><b>01</b>裝片</figcaption></figure>
+  <figure><img src="assets/tenra/02_02_capture_roll.jpg" alt="拍攝畫面：底片相機觀景窗" loading="lazy" width="240"><figcaption><b>02</b>拍攝</figcaption></figure>
+  <figure><img src="assets/tenra/03_03_develop_wait.jpg" alt="沖洗等待畫面" loading="lazy" width="240"><figcaption><b>03</b>沖洗</figcaption></figure>
+  <figure><img src="assets/tenra/04_04_reveal_roll.jpg" alt="揭曉畫面：整捲照片一次呈現" loading="lazy" width="240"><figcaption><b>04</b>揭曉</figcaption></figure>
+  <figure><img src="assets/tenra/05_05_final_frame.jpg" alt="成品照片：底片色調與顆粒" loading="lazy" width="240"><figcaption><b>05</b>成品</figcaption></figure>
+</div>
+
+<div class="perf" role="presentation"></div>
+
+<section>
+  <div class="wrap">
+    <h2>不是濾鏡，是一捲底片</h2>
+    <p class="lede">拍立得看、隨拍隨刪的年代，Tenra 把「等待」還給攝影。每一捲有 36 張的額度、鎖定的底片與畫幅——按下快門之後，得等沖洗完成才見得到照片。</p>
+    <div class="steps">
+      <div class="step"><p class="no">STEP 01</p><h3>裝片</h3><p>挑一支底片、選好畫幅比例。裝上之後整捲鎖定，就跟真的底片一樣。</p></div>
+      <div class="step"><p class="no">STEP 02</p><h3>拍攝</h3><p>36 張的額度讓每次快門都算數。拍壞的那格也不會退回——底片不重來。</p></div>
+      <div class="step"><p class="no">STEP 03</p><h3>沖洗</h3><p>選擇立即、一小時或隔天沖洗。等待的期間，照片在暗房裡慢慢成形。</p></div>
+      <div class="step"><p class="no">STEP 04</p><h3>揭曉</h3><p>整捲一次揭曉。光暈、顆粒、偶爾的漏光——每一捲都是一份小驚喜。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>八支底片，八種個性</h2>
+    <p class="lede">色調靈感取自經典底片，以 3D LUT 忠實重現——不是套個濾鏡，而是整條顯影管線：色彩、光暈、銀鹽顆粒。</p>
+    <div class="stocks">
+      <div class="stock"><div class="meta"><h3>Kodak Gold 200</h3><span class="iso">ISO 200</span></div><p>暖黃懷舊，日常裡的陽光感</p></div>
+      <div class="stock"><div class="meta"><h3>Ilford HP5 Plus</h3><span class="iso">ISO 400</span></div><p>經典黑白，顆粒分明的街頭味</p></div>
+      <div class="stock"><div class="meta"><h3>Fujifilm C200</h3><span class="iso">ISO 200</span></div><p>清透日常，微偏綠的清爽色</p></div>
+      <div class="stock"><div class="meta"><h3>Kodak Portra 400<span class="pro">PRO</span></h3><span class="iso">ISO 400</span></div><p>柔和膚色，低反差的溫柔——拍人像的首選</p></div>
+      <div class="stock"><div class="meta"><h3>Kodak Ektar 100<span class="pro">PRO</span></h3><span class="iso">ISO 100</span></div><p>高飽和豔麗，風景的顏色</p></div>
+      <div class="stock"><div class="meta"><h3>CineStill 800T<span class="pro">PRO</span></h3><span class="iso">ISO 800</span></div><p>鎢絲夜色，霓虹與路燈會發紅暈</p></div>
+      <div class="stock"><div class="meta"><h3>Kodak Double-X<span class="pro">PRO</span></h3><span class="iso">ISO 250</span></div><p>電影的黑白。銀鹽的深黑與高反差，拍什麼都像劇照。</p></div>
+      <div class="stock"><div class="meta"><h3>Fujicolor 業務用100<span class="pro">PRO</span></h3><span class="iso">ISO 100</span></div><p>業務用的樸實。不搶戲的空氣感綠調，日常拍起來剛剛好。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="text-align:center">
+    <h2>準備好裝上第一捲了嗎？</h2>
+    <p class="lede">免費下載，內建三支底片。iOS 與 Android 皆已上架。</p>
+    <div class="badges">
+      <a class="badge" href="https://apps.apple.com/app/id6787303638" aria-label="於 App Store 下載 Tenra">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <span><small>Download on the</small><b>App Store</b></span>
+      </a>
+      <a class="badge" href="https://play.google.com/store/apps/details?id=com.mooooworks.tenra" aria-label="於 Google Play 下載 Tenra">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49 2.27 2.27m3.35-4.31c.34.27.59.69.59 1.19s-.22.9-.57 1.18l-2.29 1.32-2.5-2.5 2.5-2.5 2.27 1.31M6.05 2.66l10.76 6.22-2.27 2.27-8.49-8.49z"/></svg>
+        <span><small>GET IT ON</small><b>Google Play</b></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="perf" role="presentation"></div>
+
+<footer>
+  <div class="wrap">
+    <div class="links">
+      <a href="tenra-support">支援 Support</a>
+      <a href="tenra-privacy">隱私權政策 Privacy</a>
+      <a href="tenra-terms">使用條款 Terms</a>
+    </div>
+    <p>© 2026 moooo_works · <a href="mailto:moooo.works@gmail.com">moooo.works@gmail.com</a></p>
+    <p style="margin-top:6px;font-size:.75rem">Kodak、Ilford、Fujifilm、CineStill 為其各自所有者之商標。Tenra 為獨立開發作品，與上述品牌無關。</p>
+  </div>
+</footer>
+
+</body>
+</html>
