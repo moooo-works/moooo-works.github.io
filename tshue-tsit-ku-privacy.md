@@ -40,6 +40,12 @@ This data does not include your name, phone number, email address, or any
 information that directly identifies you. You can disable sharing at any
 time from **Settings → Improvement Program**.
 
+Once you consent, Firebase also automatically collects standard usage
+statistics (such as app opens and screen views) and device information
+(device model, OS version, language, and a coarse region derived from your
+IP address), along with an anonymous install identifier. We have disabled
+collection of the Advertising ID.
+
 - **Google Firebase** — [Google Privacy Policy](https://policies.google.com/privacy)
 
 ### Information We Do Not Collect
@@ -78,7 +84,7 @@ If you have any questions about this Privacy Policy, please contact us at:
 
 ---
 
-## 中文
+## 繁體中文
 
 ### 概述
 
@@ -102,6 +108,10 @@ If you have any questions about this Privacy Policy, please contact us at:
 
 這些資料不含姓名、電話、電子郵件或任何可直接識別您身分的資訊。
 您可隨時在「設定 → 改善計畫」關閉分享。
+
+您同意後,Firebase 也會自動收集標準使用統計(如 app 開啟次數、畫面瀏覽次數)
+與裝置資訊(機型、作業系統版本、語言,以及由 IP 位址推導的粗略地區),
+以及一組匿名的安裝識別碼。我們已停用廣告識別碼(Advertising ID)的收集。
 
 - **Google Firebase** — [Google 隱私權政策](https://policies.google.com/privacy)
 
