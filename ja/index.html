@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tenra — フィルムカメラと暗室</title>
-<meta name="description" content="Tenra はスマホの中のフィルムカメラ。フィルムを装填し、36枚撮りきって、現像を待つまで写真は見られません。クラシックフィルム8本の色調に、ハレーション・粒子・光漏れ。iOS / Android で配信中。">
+<meta name="description" content="スマホの中のフィルムカメラと暗室。Ektachrome E100 とクロスプロセスを含む 9 種類のフィルムの色調に、多重露光とパーフォレーション付きのフィルム枠。撮り終えたら現像を待って、一枚ずつ楽しむ。iOS / Android で配信中。">
 <link rel="canonical" href="https://moooo-works.github.io/ja/">
 <link rel="alternate" hreflang="zh-Hant" href="https://moooo-works.github.io/">
 <link rel="alternate" hreflang="en" href="https://moooo-works.github.io/en/">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="https://moooo-works.github.io/">
 <link rel="icon" type="image/png" href="/assets/tenra/icon-192.png">
 <meta property="og:title" content="Tenra — フィルムカメラと暗室">
-<meta property="og:description" content="フィルムを装填して、36枚撮りきって、現像を待つ。ポケットの中の本物のフィルム体験。">
+<meta property="og:description" content="Ektachrome E100 とクロスプロセスを含む9種類のフィルム。装填して、撮って、現像を待つ楽しみを。">
 <meta property="og:image" content="https://moooo-works.github.io/assets/tenra/ja/04_04_reveal_roll.jpg">
 <meta property="og:url" content="https://moooo-works.github.io/ja/">
 <meta property="og:type" content="website">
@@ -105,6 +105,16 @@ h2{font-size:clamp(1.5rem,3.6vw,2rem);margin-bottom:8px;text-align:center}
 .stock .iso{color:var(--ink-dim);font-size:.78rem;letter-spacing:.08em;flex:none}
 .stock p{color:var(--ink-dim);font-size:.9rem;margin-top:8px}
 .stock .pro{display:inline-block;font-size:.66rem;color:var(--bg);background:var(--amber);border-radius:4px;padding:1px 7px;margin-left:8px;vertical-align:2px;letter-spacing:.05em}
+.processes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.process{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.process h3{color:var(--amber);margin-bottom:12px}
+.process p{color:var(--ink-dim)}
+.process:last-child{border-color:#706077}
+.process:last-child h3{color:#ceaad8}
+.process-note{max-width:56em;margin:24px auto 0;text-align:center;color:var(--ink-dim);font-size:.9rem}
+.release-note{margin-top:28px;padding:24px;border-left:3px solid var(--amber);background:var(--card);border-radius:0 var(--radius) var(--radius) 0}
+.release-note h3{font-size:1.05rem;margin-bottom:8px}
+.release-note p{color:var(--ink-dim);margin-bottom:12px}
 footer{padding:56px 0 64px;text-align:center;border-top:1px solid var(--line)}
 footer .links{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
 footer .links a{color:var(--ink-dim)}
@@ -166,8 +176,8 @@ footer p{color:var(--ink-dim);font-size:.85rem}
 
 <section>
   <div class="wrap">
-    <h2>8本のフィルム、8つの個性</h2>
-    <p class="lede">クラシックフィルムに着想を得た色を、3D LUT で忠実に再現。上から被せるフィルターではなく、色・ハレーション・銀塩粒子まで含めた現像パイプラインです。</p>
+    <h2>9本のフィルム、9つの個性</h2>
+    <p class="lede">実際のフィルム写真の色を参考に調整し、ハレーションや粒子と組み合わせて、それぞれの個性を表現しました。PRO 表示のフィルムの現像には Tenra Pro が必要です。</p>
     <div class="stocks">
       <div class="stock"><div class="meta"><h3>Kodak Gold 200</h3><span class="iso">ISO 200</span></div><p>暖かい黄色のノスタルジー、日常の陽だまり</p></div>
       <div class="stock"><div class="meta"><h3>Ilford HP5 Plus</h3><span class="iso">ISO 400</span></div><p>クラシックな白黒、粒子のきいたストリート感</p></div>
@@ -177,6 +187,36 @@ footer p{color:var(--ink-dim);font-size:.85rem}
       <div class="stock"><div class="meta"><h3>CineStill 800T<span class="pro">PRO</span></h3><span class="iso">ISO 800</span></div><p>タングステンの夜、ネオンと街灯が赤くにじむ</p></div>
       <div class="stock"><div class="meta"><h3>Kodak Double-X<span class="pro">PRO</span></h3><span class="iso">ISO 250</span></div><p>映画のモノクロ。銀塩の深い黒とハイコントラスト、どのコマもスチールのように。</p></div>
       <div class="stock"><div class="meta"><h3>Fujicolor 業務用100<span class="pro">PRO</span></h3><span class="iso">ISO 100</span></div><p>業務用の実直さ。主張しない空気感のグリーン、日常がちょうどよく写る。</p></div>
+      <div class="stock"><div class="meta"><h3>Kodak Ektachrome E100<span class="pro">PRO</span></h3><span class="iso">ISO 100</span></div><p>自然な肌色と澄んだ発色、きめ細かなリバーサルの質感</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="e100-process">
+  <div class="wrap">
+    <h2>同じ E100 に、ふたつの現像</h2>
+    <p class="lede">撮り終えてから選べます。E100 を現像に出すときに、標準現像かクロスプロセスを選択。どちらも Tenra Pro が必要です。</p>
+    <div class="processes">
+      <div class="process"><h3>E100 · 標準現像</h3><p>自然な肌色と澄んだ発色、きめ細かなリバーサルの質感。その場の光や色を残したい一本に。</p></div>
+      <div class="process"><h3>E100 · クロスプロセス</h3><p>紫がかった暗部、青緑の空、黄緑を帯びたハイライト。肌色も変化します。写真によって色の変わり方が異なり、同じフィルムに別の表情が生まれます。</p></div>
+    </div>
+    <p class="process-note">サンプルと読み込み時のプレビューは標準現像の色です。選んだ現像方法は一本全体に適用され、現像開始後は変更できません。失敗時の再試行でも同じ方法を使います。</p>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <h2>一本のフィルムに、自分らしい楽しみ方を</h2>
+    <p class="lede">シャッターを切るときも、昔の写真を探すときも。フィルムを楽しむ機能を揃えました。</p>
+    <div class="steps">
+      <div class="step"><h3>多重露光</h3><p>撮影後に MX レバーを入れると、次の露光を同じコマに重ねられます。残り枚数は減りません。重ねるたびにレバーを入れ直し、残像表示で構図を合わせることもできます。</p></div>
+      <div class="step"><h3>フィルムの縁とパーフォレーション</h3><p>装填時に枠のスタイルを選び、フィルムの縁や送り穴を写真の一部に。画角と枠の設定は一本を通して固定されます。</p></div>
+      <div class="step"><h3>ライブラリ検索</h3><p>ロール名、フィルム名、クロスプロセスの表示で検索。ロールが増えても、お気に入りの一本を見つけられます。</p></div>
+    </div>
+    <div class="release-note">
+      <h3>音量ボタンで撮影 · 1.6.1 で近日対応</h3>
+      <p>カメラ画面では音量ボタンの上下どちらも、離すと一枚撮影。長押しで連写はせず、多重露光にも使えます。Android と iOS 17.2 以降に対応予定。それ以前の iOS では画面のシャッターを使えます。</p>
+      <a href="/tenra-support#ja">使い方とよくある質問</a>
     </div>
   </div>
 </section>

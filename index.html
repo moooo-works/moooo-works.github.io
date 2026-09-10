@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tenra — 底片相機與暗房 | Film Camera & Darkroom</title>
-<meta name="description" content="Tenra 是一台裝在手機裡的底片相機：裝一捲底片、拍完 36 張、等待沖洗，才看得到照片。八款經典底片色調，附光暈、顆粒與漏光。iOS 與 Android 皆已上架。">
+<meta name="description" content="Tenra 是手機裡的底片相機與暗房。9 款經典底片色調，包含 Ektachrome E100 與正片負沖，還能重曝、選擇齒孔片邊。拍完一捲，等待沖洗後揭曉。iOS 與 Android 皆已上架。">
 <link rel="canonical" href="https://moooo-works.github.io/">
 <link rel="alternate" hreflang="zh-Hant" href="https://moooo-works.github.io/">
 <link rel="alternate" hreflang="en" href="https://moooo-works.github.io/en/">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="https://moooo-works.github.io/">
 <link rel="icon" type="image/png" href="/assets/tenra/icon-192.png">
 <meta property="og:title" content="Tenra — 底片相機與暗房">
-<meta property="og:description" content="裝一捲底片，拍完 36 張，等它沖洗。手機裡的真實底片體驗。">
+<meta property="og:description" content="9 款底片，包含 Ektachrome E100 與正片負沖。裝片、拍攝、等待沖洗，讓照片值得期待。">
 <meta property="og:image" content="https://moooo-works.github.io/assets/tenra/04_04_reveal_roll.jpg">
 <meta property="og:url" content="https://moooo-works.github.io/">
 <meta property="og:type" content="website">
@@ -105,6 +105,16 @@ h2{font-size:clamp(1.5rem,3.6vw,2rem);margin-bottom:8px;text-align:center}
 .stock .iso{color:var(--ink-dim);font-size:.78rem;letter-spacing:.08em;flex:none}
 .stock p{color:var(--ink-dim);font-size:.9rem;margin-top:8px}
 .stock .pro{display:inline-block;font-size:.66rem;color:var(--bg);background:var(--amber);border-radius:4px;padding:1px 7px;margin-left:8px;vertical-align:2px;letter-spacing:.05em}
+.processes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.process{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.process h3{color:var(--amber);margin-bottom:12px}
+.process p{color:var(--ink-dim)}
+.process:last-child{border-color:#706077}
+.process:last-child h3{color:#ceaad8}
+.process-note{max-width:56em;margin:24px auto 0;text-align:center;color:var(--ink-dim);font-size:.9rem}
+.release-note{margin-top:28px;padding:24px;border-left:3px solid var(--amber);background:var(--card);border-radius:0 var(--radius) var(--radius) 0}
+.release-note h3{font-size:1.05rem;margin-bottom:8px}
+.release-note p{color:var(--ink-dim);margin-bottom:12px}
 footer{padding:56px 0 64px;text-align:center;border-top:1px solid var(--line)}
 footer .links{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
 footer .links a{color:var(--ink-dim)}
@@ -166,8 +176,8 @@ footer p{color:var(--ink-dim);font-size:.85rem}
 
 <section>
   <div class="wrap">
-    <h2>八支底片，八種個性</h2>
-    <p class="lede">色調靈感取自經典底片，以 3D LUT 忠實重現——不是套個濾鏡，而是整條顯影管線：色彩、光暈、銀鹽顆粒。</p>
+    <h2>9 款底片，9 種個性</h2>
+    <p class="lede">參考經典底片的實拍色彩調製，結合色調、光暈與顆粒，呈現各自的影像個性。標示 PRO 的底片需使用 Tenra Pro 送洗。</p>
     <div class="stocks">
       <div class="stock"><div class="meta"><h3>Kodak Gold 200</h3><span class="iso">ISO 200</span></div><p>暖黃懷舊，日常裡的陽光感</p></div>
       <div class="stock"><div class="meta"><h3>Ilford HP5 Plus</h3><span class="iso">ISO 400</span></div><p>經典黑白，顆粒分明的街頭味</p></div>
@@ -177,6 +187,36 @@ footer p{color:var(--ink-dim);font-size:.85rem}
       <div class="stock"><div class="meta"><h3>CineStill 800T<span class="pro">PRO</span></h3><span class="iso">ISO 800</span></div><p>鎢絲夜色，霓虹與路燈會發紅暈</p></div>
       <div class="stock"><div class="meta"><h3>Kodak Double-X<span class="pro">PRO</span></h3><span class="iso">ISO 250</span></div><p>電影的黑白。銀鹽的深黑與高反差，拍什麼都像劇照。</p></div>
       <div class="stock"><div class="meta"><h3>Fujicolor 業務用100<span class="pro">PRO</span></h3><span class="iso">ISO 100</span></div><p>業務用的樸實。不搶戲的空氣感綠調，日常拍起來剛剛好。</p></div>
+      <div class="stock"><div class="meta"><h3>Kodak Ektachrome E100<span class="pro">PRO</span></h3><span class="iso">ISO 100</span></div><p>自然膚色、清亮色彩，細緻通透的正片感</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="e100-process">
+  <div class="wrap">
+    <h2>同一支 E100，兩種沖法</h2>
+    <p class="lede">拍完再決定。送洗 E100 時，選擇標準沖洗或正片負沖；兩種方式都使用 Tenra Pro 送洗。</p>
+    <div class="processes">
+      <div class="process"><h3>E100 · 標準</h3><p>自然膚色、清亮色彩，保留細緻通透的正片感。適合想留下現場光線與色彩的那一捲。</p></div>
+      <div class="process"><h3>E100 · 正片負沖</h3><p>暗部偏紫、天空偏青綠，亮部帶黃綠，膚色也會跟著改變。不同照片會呈現不同程度的偏色，讓同一支底片多一種脾氣。</p></div>
+    </div>
+    <p class="process-note">樣片與匯入預覽顯示標準發色。送洗開始後，整捲沖法即鎖定；沖洗失敗重試也沿用原本的選擇。</p>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <h2>一捲底片，也有自己的玩法</h2>
+    <p class="lede">從按下快門到找回舊照片，讓拍一捲的每一步更順手。</p>
+    <div class="steps">
+      <div class="step"><h3>重曝，不過片</h3><p>拍完一格後撥起不過片撥桿，下一次快門就疊在同一格，張數不增加。想再疊一次，就再撥一次；也可開啟殘影輔助構圖。</p></div>
+      <div class="step"><h3>齒孔片邊</h3><p>裝片時選好片邊樣式，讓齒孔與底片邊緣成為照片的一部分。畫幅與片邊設定會沿用整捲。</p></div>
+      <div class="step"><h3>底片庫搜尋</h3><p>捲名、底片名稱，或「正片負沖」都能找。底片越拍越多，也能找回想看的那一捲。</p></div>
+    </div>
+    <div class="release-note">
+      <h3>音量鍵快門 · 1.6.1 即將推出</h3>
+      <p>在相機裡，音量加、減放開各拍一張，長按不連拍，也能用來重曝。Android 支援；iPhone 需 iOS 17.2 以上，較舊系統仍可使用畫面快門。</p>
+      <a href="/tenra-support#zh">查看使用說明與常見問題</a>
     </div>
   </div>
 </section>

@@ -179,6 +179,34 @@
         "ja": "業務用の実直さ。主張しない空気感のグリーン、日常がちょうどよく写る。",
         "ko": "업무용의 담백함. 나서지 않는 산뜻한 그린 톤 — 일상이 딱 알맞게 담깁니다."
       }
+    },
+    {
+      "id": "e100",
+      "displayName": "Kodak Ektachrome E100",
+      "iso": 100,
+      "type": "colorReversal",
+      "lutAsset": "assets/luts/e100.png",
+      "crossProcessLutAsset": "assets/luts/e100_xpro.png",
+      "grain": {
+        "size": "extraFine",
+        "intensity": 0.14
+      },
+      "halation": null,
+      "isPremium": true,
+      "sortOrder": 9,
+      "edge": {
+        "format": "kodak",
+        "holeTone": "light",
+        "printColor": "#E6E4DD",
+        "baseColor": "#121212",
+        "text": "KODAK E100"
+      },
+      "personality": {
+        "zh": "自然膚色、清亮色彩，細緻通透的正片感",
+        "en": "Natural skin tones and luminous color, with fine slide-film detail",
+        "ja": "自然な肌色と澄んだ発色、きめ細かなリバーサルの質感",
+        "ko": "자연스러운 피부톤과 맑은 색감, 섬세한 슬라이드 필름의 질감"
+      }
     }
   ]
 }

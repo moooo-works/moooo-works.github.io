@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tenra — 필름 카메라와 암실</title>
-<meta name="description" content="Tenra는 폰 속의 필름 카메라입니다. 필름 한 롤을 장전하고, 36장을 다 찍고, 현상이 끝나야 사진을 볼 수 있습니다. 클래식 필름 8종의 색감에 헐레이션·그레인·빛샘까지. iOS와 Android 모두 출시.">
+<meta name="description" content="폰 속의 필름 카메라와 암실. Ektachrome E100과 크로스 프로세스를 포함한 필름 9종의 색감, 다중 노출과 필름 테두리까지. 한 롤을 촬영하고 현상을 기다린 뒤 사진을 만나세요. iOS와 Android 모두 출시.">
 <link rel="canonical" href="https://moooo-works.github.io/ko/">
 <link rel="alternate" hreflang="zh-Hant" href="https://moooo-works.github.io/">
 <link rel="alternate" hreflang="en" href="https://moooo-works.github.io/en/">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="https://moooo-works.github.io/">
 <link rel="icon" type="image/png" href="/assets/tenra/icon-192.png">
 <meta property="og:title" content="Tenra — 필름 카메라와 암실">
-<meta property="og:description" content="필름 한 롤을 장전하고, 36장을 다 찍고, 현상을 기다리세요. 주머니 속 진짜 필름 경험.">
+<meta property="og:description" content="Ektachrome E100과 크로스 프로세스를 포함한 필름 9종. 장전하고, 촬영하고, 현상을 기다리는 즐거움.">
 <meta property="og:image" content="https://moooo-works.github.io/assets/tenra/ko/04_04_reveal_roll.jpg">
 <meta property="og:url" content="https://moooo-works.github.io/ko/">
 <meta property="og:type" content="website">
@@ -105,6 +105,16 @@ h2{font-size:clamp(1.5rem,3.6vw,2rem);margin-bottom:8px;text-align:center}
 .stock .iso{color:var(--ink-dim);font-size:.78rem;letter-spacing:.08em;flex:none}
 .stock p{color:var(--ink-dim);font-size:.9rem;margin-top:8px}
 .stock .pro{display:inline-block;font-size:.66rem;color:var(--bg);background:var(--amber);border-radius:4px;padding:1px 7px;margin-left:8px;vertical-align:2px;letter-spacing:.05em}
+.processes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.process{padding:28px;border:1px solid var(--line);border-radius:var(--radius);background:var(--card)}
+.process h3{color:var(--amber);margin-bottom:12px}
+.process p{color:var(--ink-dim)}
+.process:last-child{border-color:#706077}
+.process:last-child h3{color:#ceaad8}
+.process-note{max-width:56em;margin:24px auto 0;text-align:center;color:var(--ink-dim);font-size:.9rem}
+.release-note{margin-top:28px;padding:24px;border-left:3px solid var(--amber);background:var(--card);border-radius:0 var(--radius) var(--radius) 0}
+.release-note h3{font-size:1.05rem;margin-bottom:8px}
+.release-note p{color:var(--ink-dim);margin-bottom:12px}
 footer{padding:56px 0 64px;text-align:center;border-top:1px solid var(--line)}
 footer .links{display:flex;gap:26px;justify-content:center;flex-wrap:wrap;margin-bottom:18px}
 footer .links a{color:var(--ink-dim)}
@@ -166,8 +176,8 @@ footer p{color:var(--ink-dim);font-size:.85rem}
 
 <section>
   <div class="wrap">
-    <h2>여덟 가지 필름, 여덟 가지 개성</h2>
-    <p class="lede">클래식 필름에서 영감을 받은 색을 3D LUT로 충실히 재현 — 위에 씌우는 필터가 아니라 색, 헐레이션, 은염 그레인까지 아우르는 현상 파이프라인입니다.</p>
+    <h2>9가지 필름, 9가지 개성</h2>
+    <p class="lede">실제 필름 사진의 색감을 참고해 조정하고 헐레이션과 그레인을 더해 각 필름의 개성을 표현했습니다. PRO 표시 필름의 현상에는 Tenra Pro가 필요합니다.</p>
     <div class="stocks">
       <div class="stock"><div class="meta"><h3>Kodak Gold 200</h3><span class="iso">ISO 200</span></div><p>따뜻한 노란빛의 향수, 일상의 햇살</p></div>
       <div class="stock"><div class="meta"><h3>Ilford HP5 Plus</h3><span class="iso">ISO 400</span></div><p>클래식 흑백, 거친 입자의 스트리트 감성</p></div>
@@ -177,6 +187,36 @@ footer p{color:var(--ink-dim);font-size:.85rem}
       <div class="stock"><div class="meta"><h3>CineStill 800T<span class="pro">PRO</span></h3><span class="iso">ISO 800</span></div><p>텅스텐의 밤, 네온과 가로등이 붉게 번지는</p></div>
       <div class="stock"><div class="meta"><h3>Kodak Double-X<span class="pro">PRO</span></h3><span class="iso">ISO 250</span></div><p>영화의 흑백. 은염의 깊은 검정과 강한 대비 — 모든 컷이 스틸컷처럼.</p></div>
       <div class="stock"><div class="meta"><h3>Fujicolor 業務用100<span class="pro">PRO</span></h3><span class="iso">ISO 100</span></div><p>업무용의 담백함. 나서지 않는 산뜻한 그린 톤 — 일상이 딱 알맞게 담깁니다.</p></div>
+      <div class="stock"><div class="meta"><h3>Kodak Ektachrome E100<span class="pro">PRO</span></h3><span class="iso">ISO 100</span></div><p>자연스러운 피부톤과 맑은 색감, 섬세한 슬라이드 필름의 질감</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="e100-process">
+  <div class="wrap">
+    <h2>같은 E100, 두 가지 현상</h2>
+    <p class="lede">촬영을 마친 뒤 결정하세요. E100을 현상할 때 표준 현상과 크로스 프로세스 중에서 선택할 수 있습니다. 두 방식 모두 Tenra Pro가 필요합니다.</p>
+    <div class="processes">
+      <div class="process"><h3>E100 · 표준 현상</h3><p>자연스러운 피부톤과 맑은 색감, 섬세한 슬라이드 필름의 질감. 현장의 빛과 색을 간직하고 싶은 롤에 어울립니다.</p></div>
+      <div class="process"><h3>E100 · 크로스 프로세스</h3><p>보라색 그림자, 청록색 하늘, 황록색 하이라이트에 피부색도 달라집니다. 사진에 따라 색이 변하는 정도가 달라져 같은 필름에 또 다른 표정이 생깁니다.</p></div>
+    </div>
+    <p class="process-note">샘플과 가져오기 미리보기에는 표준 색감이 표시됩니다. 선택한 현상 방식은 롤 전체에 적용되며, 현상을 시작하면 바꿀 수 없습니다. 현상 실패 후 재시도할 때도 같은 방식을 유지합니다.</p>
+  </div>
+</section>
+
+<section id="features">
+  <div class="wrap">
+    <h2>한 롤을 나만의 방식으로</h2>
+    <p class="lede">셔터를 누르는 순간부터 예전 사진을 다시 찾을 때까지, 필름을 즐기는 방법을 더했습니다.</p>
+    <div class="steps">
+      <div class="step"><h3>다중 노출</h3><p>한 장을 찍고 필름 이송 방지 레버를 올리면 다음 노출이 같은 프레임에 겹쳐집니다. 남은 장수는 줄지 않습니다. 더 겹칠 때마다 레버를 다시 올리고, 잔상 표시로 구도를 맞출 수도 있습니다.</p></div>
+      <div class="step"><h3>필름 테두리</h3><p>장전할 때 테두리 스타일을 선택해 필름 가장자리와 퍼포레이션을 사진에 담으세요. 화면 비율과 테두리 설정은 롤 전체에 유지됩니다.</p></div>
+      <div class="step"><h3>라이브러리 검색</h3><p>롤 이름, 필름 이름, 크로스 프로세스 표시로 검색하세요. 롤이 쌓여도 다시 보고 싶은 한 롤을 찾을 수 있습니다.</p></div>
+    </div>
+    <div class="release-note">
+      <h3>볼륨 버튼 셔터 · 1.6.1에서 곧 제공</h3>
+      <p>카메라에서 볼륨 위·아래 버튼을 놓으면 한 장을 촬영하며 다중 노출도 가능합니다. 길게 눌러도 연사하지 않습니다. Android와 iOS 17.2 이상에서 지원 예정이며, 이전 iOS에서는 화면 셔터를 사용할 수 있습니다.</p>
+      <a href="/tenra-support#ko">사용법과 자주 묻는 질문</a>
     </div>
   </div>
 </section>
