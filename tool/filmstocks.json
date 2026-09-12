@@ -3,16 +3,8 @@
   "_comment": [
     "FilmStock static data (Spec §2.1 fields, §3.5 v1 list). Data-driven:",
     "new stocks are added HERE + a HALD PNG, never by changing engine/.",
-    "grain/halation parameter values are placeholders until W8-9 校色.",
-    "TODO(校色): replace placeholder lutAsset with real graded LUTs:",
-    "  cp200        -> assets/luts/cp200.png",
-    "  gold200        -> assets/luts/gold200.png",
-    "  hp5plus        -> assets/luts/hp5plus.png",
-    "  c100           -> assets/luts/c100.png",
-    "  c200           -> assets/luts/c200.png",
-    "  portra400      -> assets/luts/portra400.png",
-    "  ektar100       -> assets/luts/ektar100.png",
-    "  cinestill800t  -> assets/luts/cinestill800t.png"
+    "LUT/grain/halation values are production settings; E100 uses the user-approved v4 grade.",
+    "Re-grading any LUT also requires bumping SampleThumbService.cacheVersion."
   ],
   "filmStocks": [
     {
@@ -28,8 +20,14 @@
       "halation": null,
       "isPremium": false,
       "sortOrder": 1,
+      "edge": {
+        "format": "kodak",
+        "holeTone": "dark",
+        "printColor": "#FFAB52",
+        "text": "KODAK GB 200-8"
+      },
       "personality": {
-        "zh": "暖黃懷舊,日常裡的陽光感",
+        "zh": "暖黃懷舊，日常裡的陽光感",
         "en": "Warm golden nostalgia — everyday sunshine",
         "ja": "暖かい黄色のノスタルジー、日常の陽だまり",
         "ko": "따뜻한 노란빛의 향수, 일상의 햇살"
@@ -48,8 +46,15 @@
       "halation": null,
       "isPremium": false,
       "sortOrder": 2,
+      "edge": {
+        "format": "ilford",
+        "holeTone": "dark",
+        "printColor": "#E6E4DD",
+        "baseColor": "#121212",
+        "text": "ILFORD HP5 PLUS"
+      },
       "personality": {
-        "zh": "經典黑白,顆粒分明的街頭味",
+        "zh": "經典黑白，顆粒分明的街頭味",
         "en": "Classic black & white with bold grain",
         "ja": "クラシックな白黒、粒子のきいたストリート感",
         "ko": "클래식 흑백, 거친 입자의 스트리트 감성"
@@ -68,11 +73,77 @@
       "halation": null,
       "isPremium": false,
       "sortOrder": 3,
+      "edge": {
+        "format": "fuji",
+        "holeTone": "dark",
+        "printColor": "#DFD45E",
+        "baseColor": "#15130D",
+        "text": "FUJICOLOR C200",
+        "tokens": [
+          "36",
+          "200",
+          "CA24"
+        ]
+      },
       "personality": {
-        "zh": "清透日常,微偏綠的清爽色",
+        "zh": "清透日常，微偏綠的清爽色",
         "en": "Clean and airy, a fresh green tint for daily life",
         "ja": "透明感のある日常、ほんのり緑がかった爽やかさ",
         "ko": "맑고 투명한 일상, 살짝 초록빛 도는 청량감"
+      }
+    },
+    {
+      "id": "kentmere400",
+      "displayName": "Kentmere PAN 400",
+      "iso": 400,
+      "type": "bw",
+      "lutAsset": "assets/luts/kentmere400.png",
+      "grain": {
+        "size": "medium",
+        "intensity": 0.4
+      },
+      "halation": null,
+      "isPremium": false,
+      "sortOrder": 4,
+      "edge": {
+        "format": "ilford",
+        "holeTone": "dark",
+        "printColor": "#E6E4DD",
+        "baseColor": "#121212",
+        "text": "K 400"
+      },
+      "personality": {
+        "zh": "柔和灰階，留住暗部層次的日常黑白",
+        "en": "Gentle greys and open shadows — everyday black and white",
+        "ja": "やわらかな階調と暗部の表情、日常のモノクロ",
+        "ko": "부드러운 계조와 살아 있는 암부, 일상의 흑백"
+      }
+    },
+    {
+      "id": "vista400",
+      "displayName": "Agfa Vista 400",
+      "iso": 400,
+      "type": "colorNegative",
+      "lutAsset": "assets/luts/vista400.png",
+      "grain": {
+        "size": "extraFine",
+        "intensity": 0.14
+      },
+      "halation": null,
+      "isPremium": false,
+      "sortOrder": 5,
+      "edge": {
+        "format": "kodak",
+        "holeTone": "dark",
+        "printColor": "#EDAD73",
+        "baseColor": "#18120F",
+        "text": "AGFA VISTA 400 3.0"
+      },
+      "personality": {
+        "zh": "鮮明紅色與冷調藍灰，細顆粒的日常彩負",
+        "en": "Vivid reds and cool blue-grey tones, with delicate grain",
+        "ja": "鮮やかな赤とクールな青灰色、きめ細かな粒子のカラーネガ",
+        "ko": "선명한 빨강과 차분한 청회색, 고운 입자의 컬러 네거티브"
       }
     },
     {
@@ -87,9 +158,15 @@
       },
       "halation": null,
       "isPremium": true,
-      "sortOrder": 4,
+      "sortOrder": 6,
+      "edge": {
+        "format": "kodak",
+        "holeTone": "dark",
+        "printColor": "#FF9E45",
+        "text": "KODAK PORTRA 400"
+      },
       "personality": {
-        "zh": "柔和膚色,低反差的溫柔 — 拍人像的首選",
+        "zh": "柔和膚色，低反差的溫柔 — 拍人像的首選",
         "en": "Soft skin tones, gentle contrast — made for portraits",
         "ja": "やわらかな肌色と低コントラスト — ポートレート向き",
         "ko": "부드러운 피부톤과 낮은 대비 — 인물 사진의 정석"
@@ -107,9 +184,15 @@
       },
       "halation": null,
       "isPremium": true,
-      "sortOrder": 5,
+      "sortOrder": 7,
+      "edge": {
+        "format": "kodak",
+        "holeTone": "dark",
+        "printColor": "#FF9540",
+        "text": "KODAK EKTAR 100"
+      },
       "personality": {
-        "zh": "高飽和豔麗,風景的顏色",
+        "zh": "高飽和豔麗，風景的顏色",
         "en": "Vivid saturation — colors made for landscapes",
         "ja": "鮮やかな高彩度、風景のための色",
         "ko": "쨍한 고채도, 풍경을 위한 색"
@@ -126,15 +209,23 @@
         "intensity": 0.36
       },
       "halation": {
-        "threshold": 0.75,
-        "radius": 0.03,
-        "strength": 0.6
+        "threshold": 0.85,
+        "radius": 0.022,
+        "strength": 1.0
       },
       "isPremium": true,
-      "sortOrder": 6,
+      "sortOrder": 8,
       "coldLeak": true,
+      "edge": {
+        "format": "keykode",
+        "holeTone": "dark",
+        "printColor": "#D96A4A",
+        "baseColor": "#1A1210",
+        "text": "EASTMAN 5219 184 2207 122 KD",
+        "text2": "KL 22 4471 8102"
+      },
       "personality": {
-        "zh": "鎢絲夜色,霓虹與路燈會發紅暈",
+        "zh": "鎢絲夜色，霓虹與路燈會發紅暈",
         "en": "Tungsten nights — neon and streetlights bloom red",
         "ja": "タングステンの夜、ネオンと街灯が赤くにじむ",
         "ko": "텅스텐의 밤, 네온과 가로등이 붉게 번지는"
@@ -152,9 +243,17 @@
       },
       "halation": null,
       "isPremium": true,
-      "sortOrder": 7,
+      "sortOrder": 9,
+      "edge": {
+        "format": "keykode",
+        "holeTone": "dark",
+        "printColor": "#ECECE6",
+        "baseColor": "#111113",
+        "text": "EASTMAN 5222 167 3301 122 KD",
+        "text2": "KJ 22 1234 5678"
+      },
       "personality": {
-        "zh": "電影的黑白。銀鹽的深黑與高反差,拍什麼都像劇照。",
+        "zh": "電影的黑白。銀鹽的深黑與高反差，拍什麼都像劇照。",
         "en": "Cinema's black and white. Deep silver blacks — every frame a film still.",
         "ja": "映画のモノクロ。銀塩の深い黒とハイコントラスト、どのコマもスチールのように。",
         "ko": "영화의 흑백. 은염의 깊은 검정과 강한 대비 — 모든 컷이 스틸컷처럼."
@@ -172,9 +271,21 @@
       },
       "halation": null,
       "isPremium": true,
-      "sortOrder": 8,
+      "sortOrder": 10,
+      "edge": {
+        "format": "fuji",
+        "holeTone": "dark",
+        "printColor": "#D8CE57",
+        "baseColor": "#15130D",
+        "text": "FUJICOLOR 100",
+        "tokens": [
+          "36",
+          "100",
+          "CN23"
+        ]
+      },
       "personality": {
-        "zh": "業務用的樸實。不搶戲的空氣感綠調,日常拍起來剛剛好。",
+        "zh": "業務用的樸實。不搶戲的空氣感綠調，日常拍起來剛剛好。",
         "en": "The workhorse. Airy, understated greens — everyday life, rendered just right.",
         "ja": "業務用の実直さ。主張しない空気感のグリーン、日常がちょうどよく写る。",
         "ko": "업무용의 담백함. 나서지 않는 산뜻한 그린 톤 — 일상이 딱 알맞게 담깁니다."
@@ -193,7 +304,7 @@
       },
       "halation": null,
       "isPremium": true,
-      "sortOrder": 9,
+      "sortOrder": 11,
       "edge": {
         "format": "kodak",
         "holeTone": "light",

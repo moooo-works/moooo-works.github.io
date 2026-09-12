@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tenra — フィルムカメラと暗室</title>
-<meta name="description" content="スマホの中のフィルムカメラと暗室。Ektachrome E100 とクロスプロセスを含む 9 種類のフィルムの色調に、多重露光とパーフォレーション付きのフィルム枠。撮り終えたら現像を待って、一枚ずつ楽しむ。iOS / Android で配信中。">
+<meta name="description" content="Tenra 1.7.0：スマホの中のフィルムカメラと暗室。11種類のうち5種類が無料。Kentmere PAN 400、Agfa Vista 400 とオレンジ色の日付写し込みを追加。多重露光、フィルム枠、E100 クロスプロセス、音量ボタン撮影に対応。">
 <link rel="canonical" href="https://moooo-works.github.io/ja/">
 <link rel="alternate" hreflang="zh-Hant" href="https://moooo-works.github.io/">
 <link rel="alternate" hreflang="en" href="https://moooo-works.github.io/en/">
@@ -13,7 +13,7 @@
 <link rel="alternate" hreflang="x-default" href="https://moooo-works.github.io/">
 <link rel="icon" type="image/png" href="/assets/tenra/icon-192.png">
 <meta property="og:title" content="Tenra — フィルムカメラと暗室">
-<meta property="og:description" content="Ektachrome E100 とクロスプロセスを含む9種類のフィルム。装填して、撮って、現像を待つ楽しみを。">
+<meta property="og:description" content="1.7.0 で無料の Kentmere PAN 400、Agfa Vista 400 と日付写し込みを追加。11種類のフィルム、5種類が無料。一本撮って、現像を待つ楽しみを。">
 <meta property="og:image" content="https://moooo-works.github.io/assets/tenra/ja/04_04_reveal_roll.jpg">
 <meta property="og:url" content="https://moooo-works.github.io/ja/">
 <meta property="og:type" content="website">
@@ -112,6 +112,7 @@ h2{font-size:clamp(1.5rem,3.6vw,2rem);margin-bottom:8px;text-align:center}
 .process:last-child{border-color:#706077}
 .process:last-child h3{color:#ceaad8}
 .process-note{max-width:56em;margin:24px auto 0;text-align:center;color:var(--ink-dim);font-size:.9rem}
+.release-link{margin-top:24px;font-size:.9rem}
 .release-note{margin-top:28px;padding:24px;border-left:3px solid var(--amber);background:var(--card);border-radius:0 var(--radius) var(--radius) 0}
 .release-note h3{font-size:1.05rem;margin-bottom:8px}
 .release-note p{color:var(--ink-dim);margin-bottom:12px}
@@ -146,6 +147,7 @@ footer p{color:var(--ink-dim);font-size:.85rem}
         <span><small>GET IT ON</small><b>Google Play</b></span>
       </a>
     </div>
+    <p class="release-link"><a href="#release-170">1.7.0 の新フィルムと日付写し込みを見る</a></p>
   </div>
 </header>
 
@@ -161,27 +163,41 @@ footer p{color:var(--ink-dim);font-size:.85rem}
 
 <div class="perf" role="presentation"></div>
 
-<section>
+<section id="release-170">
   <div class="wrap">
-    <h2>フィルターじゃない、一本のフィルム。</h2>
-    <p class="lede">撮っては消せる時代に、Tenra は写真に「待つ時間」を取り戻します。1本のロールは36枚。フィルムと画角は装填時に固定——シャッターを切ったら、現像が終わるまで写真は見られません。</p>
+    <h2>1.7.0 · 新フィルムと日付写し込み</h2>
+    <p class="lede">モノクロとカラーを一本ずつ。どちらも無料の棚へ。撮った日も写真の片隅に残せます。</p>
     <div class="steps">
-      <div class="step"><p class="no">STEP 01</p><h3>装填</h3><p>フィルムと画角を選んで装填。装填したら1本まるごとロック、本物のフィルムと同じです。</p></div>
-      <div class="step"><p class="no">STEP 02</p><h3>撮影</h3><p>36枚だからこそ、1枚1枚が真剣勝負。失敗したコマも戻ってきません——フィルムにやり直しはなし。</p></div>
-      <div class="step"><p class="no">STEP 03</p><h3>現像</h3><p>すぐ現像、1時間後、または翌日。待っている間、写真は暗室の中でゆっくり形になります。</p></div>
-      <div class="step"><p class="no">STEP 04</p><h3>現像上がり</h3><p>1本まるごと一気にご対面。ハレーション、粒子、ときどき光漏れ——どのロールも小さなサプライズ。</p></div>
+      <div class="step"><h3>Kentmere PAN 400 · 無料</h3><p>やわらかな階調と暗部の表情。HP5、Double-X とはまた違う個性で、日常のモノクロに新しい選択肢を。</p></div>
+      <div class="step"><h3>Agfa Vista 400 · 無料</h3><p>開発者自身が Vista 400 で撮影した写真を参考に調整。鮮やかな赤、冷たい青灰色、細かな粒子が特徴です。</p></div>
+      <div class="step"><h3>日付写し込み · 無料</h3><p>撮影画面でオンにすると、撮影日を yyyy-MM-dd のオレンジ色の液晶風数字で記録。横位置は右下、縦位置は左下で回転し、送り穴を避けます。設定は記憶され、読み込んだ写真には日付を追加しません。</p></div>
     </div>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>9本のフィルム、9つの個性</h2>
+    <h2>装填して、撮って、現像後に楽しむ</h2>
+    <p class="lede">一本は最大36枚。フィルムと画角は装填時に選びます。ファインダーにはフィルム効果をリアルタイム表示せず、アプリで撮った写真は現像後に見られます。撮り切る前に現像することもできます。</p>
+    <div class="steps">
+      <div class="step"><p class="no">STEP 01</p><h3>装填</h3><p>フィルムと画角を選んで装填。装填したら1本まるごとロック、本物のフィルムと同じです。</p></div>
+      <div class="step"><p class="no">STEP 02</p><h3>撮影</h3><p>36枚だからこそ、1枚1枚が真剣勝負。失敗したコマも戻ってきません——フィルムにやり直しはなし。</p></div>
+      <div class="step"><p class="no">STEP 03</p><h3>現像</h3><p>すぐ現像、1時間後、または翌日。待っている間、写真は暗室の中でゆっくり形になります。</p></div>
+      <div class="step"><p class="no">STEP 04</p><h3>現像上がり</h3><p>一本をまとめて公開し、色や粒子をゆっくり楽しめます。装填時にフィルム先端の感光も選べ、最初のコマにその跡が残ります。</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>11本のフィルム、11つの個性</h2>
     <p class="lede">実際のフィルム写真の色を参考に調整し、ハレーションや粒子と組み合わせて、それぞれの個性を表現しました。PRO 表示のフィルムの現像には Tenra Pro が必要です。</p>
     <div class="stocks">
       <div class="stock"><div class="meta"><h3>Kodak Gold 200</h3><span class="iso">ISO 200</span></div><p>暖かい黄色のノスタルジー、日常の陽だまり</p></div>
       <div class="stock"><div class="meta"><h3>Ilford HP5 Plus</h3><span class="iso">ISO 400</span></div><p>クラシックな白黒、粒子のきいたストリート感</p></div>
       <div class="stock"><div class="meta"><h3>Fujifilm C200</h3><span class="iso">ISO 200</span></div><p>透明感のある日常、ほんのり緑がかった爽やかさ</p></div>
+      <div class="stock"><div class="meta"><h3>Kentmere PAN 400</h3><span class="iso">ISO 400</span></div><p>やわらかな階調と暗部の表情、日常のモノクロ</p></div>
+      <div class="stock"><div class="meta"><h3>Agfa Vista 400</h3><span class="iso">ISO 400</span></div><p>鮮やかな赤とクールな青灰色、きめ細かな粒子のカラーネガ</p></div>
       <div class="stock"><div class="meta"><h3>Kodak Portra 400<span class="pro">PRO</span></h3><span class="iso">ISO 400</span></div><p>やわらかな肌色と低コントラスト — ポートレート向き</p></div>
       <div class="stock"><div class="meta"><h3>Kodak Ektar 100<span class="pro">PRO</span></h3><span class="iso">ISO 100</span></div><p>鮮やかな高彩度、風景のための色</p></div>
       <div class="stock"><div class="meta"><h3>CineStill 800T<span class="pro">PRO</span></h3><span class="iso">ISO 800</span></div><p>タングステンの夜、ネオンと街灯が赤くにじむ</p></div>
@@ -212,10 +228,13 @@ footer p{color:var(--ink-dim);font-size:.85rem}
       <div class="step"><h3>多重露光</h3><p>撮影後に MX レバーを入れると、次の露光を同じコマに重ねられます。残り枚数は減りません。重ねるたびにレバーを入れ直し、残像表示で構図を合わせることもできます。</p></div>
       <div class="step"><h3>フィルムの縁とパーフォレーション</h3><p>装填時に枠のスタイルを選び、フィルムの縁や送り穴を写真の一部に。画角と枠の設定は一本を通して固定されます。</p></div>
       <div class="step"><h3>ライブラリ検索</h3><p>ロール名、フィルム名、クロスプロセスの表示で検索。ロールが増えても、お気に入りの一本を見つけられます。</p></div>
+      <div class="step"><h3>読み込みとプレビュー</h3><p>昔の写真を暗室へ。読み込み時に色調を確認できます。Pro フィルムも作例とプレビューを先に見られ、現像時に Pro が必要です。</p></div>
+      <div class="step"><h3>巻き戻して棚へ</h3><p>途中で別のフィルムを使いたくなったら、巻き戻して棚に保管。あとで装填し直して続きを撮れます。</p></div>
+      <div class="step"><h3>一本まとめて保存</h3><p>一枚を共有したり、一本分の写真とコンタクトシートを保存したり。現像した写真を持ち出せます。</p></div>
     </div>
     <div class="release-note">
-      <h3>音量ボタンで撮影 · 1.6.1 で近日対応</h3>
-      <p>カメラ画面では音量ボタンの上下どちらも、離すと一枚撮影。長押しで連写はせず、多重露光にも使えます。Android と iOS 17.2 以降に対応予定。それ以前の iOS では画面のシャッターを使えます。</p>
+      <h3>音量ボタンで撮影</h3>
+      <p>カメラ画面では音量ボタンの上下どちらも、離すと一枚撮影。長押しで連写はせず、多重露光にも使えます。Android と iOS 17.2 以降に対応。それ以前の iOS では画面のシャッターを使えます。</p>
       <a href="/tenra-support#ja">使い方とよくある質問</a>
     </div>
   </div>
@@ -224,7 +243,7 @@ footer p{color:var(--ink-dim);font-size:.85rem}
 <section>
   <div class="wrap" style="text-align:center">
     <h2>最初の1本、装填してみませんか？</h2>
-    <p class="lede">ダウンロード無料、フィルム3本入り。iOS / Android で配信中。</p>
+    <p class="lede">ダウンロード無料、5種類のフィルムを無料で使えます。iOS / Android に対応。</p>
     <div class="badges">
       <a class="badge" href="https://apps.apple.com/app/id6787303638" aria-label="App Store で Tenra をダウンロード">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
@@ -248,7 +267,7 @@ footer p{color:var(--ink-dim);font-size:.85rem}
       <a href="/tenra-terms#ja">利用規約</a>
     </div>
     <p>© 2026 moooo_works · <a href="mailto:moooo.works@gmail.com">moooo.works@gmail.com</a></p>
-    <p style="margin-top:6px;font-size:.75rem">Kodak、Ilford、Fujifilm、CineStill は各社の商標です。Tenra は独立した個人開発アプリであり、上記ブランドとは関係ありません。</p>
+    <p style="margin-top:6px;font-size:.75rem">Kodak、Ilford、Fujifilm、Kentmere、Agfa、CineStill は各社の商標です。Tenra は独立した個人開発アプリであり、上記ブランドとは関係ありません。</p>
   </div>
 </footer>
 
