@@ -2,6 +2,8 @@
 
 Tenra landing pages and support documents, published by GitHub Pages from `main`.
 
+Tonori public legal documents live under `/tonori/`. Privacy Policy and Terms of Use are maintained as separate Traditional Chinese, English, Japanese, and Korean pages. Keep all eight language pages aligned with the shipped app before changing App Store privacy answers or features.
+
 ## Update the Tenra pages
 
 - `tool/filmstocks.json` holds the public film catalogue. Keep its names, premium flags and four-language personality copy aligned with the app's `assets/filmstocks.json`.
