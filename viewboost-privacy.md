@@ -5,7 +5,7 @@ title: ViewBoost Privacy Policy
 
 # Privacy Policy / 隱私權政策
 
-**Last updated / 最後更新：2026-05-25**
+**Last updated / 最後更新：2026-10-21**
 
 ---
 
@@ -67,12 +67,13 @@ This App uses the following third-party services that may collect data per their
 - **Firebase (Google)** — Authentication, Firestore database, Cloud Functions, Cloud Messaging (FCM), App Check / Play Integrity — [Google Privacy Policy](https://policies.google.com/privacy)
 - **Firebase Crashlytics** — Automatically collects diagnostic data when the App crashes, including device model, OS version, App version, locale, anonymous installation ID, and the sequence of actions leading up to the crash. Used solely for stability improvements. — [Crashlytics data collection](https://firebase.google.com/support/privacy)
 - **Google AdMob** — Rewarded and banner advertisements. AdMob may use the Android Advertising ID and device identifiers to serve personalized ads. — [Google Privacy Policy](https://policies.google.com/privacy) / [Ad personalization](https://support.google.com/ads/answer/2662922)
+- **Unity Ads** — An ad source through AdMob Mediation for banner, interstitial, and rewarded ads. Unity may collect device identifiers (including the advertising ID), IP address, and ad interaction data for ad delivery and measurement. — [Unity Game Player and App User Privacy Policy](https://unity.com/legal/game-player-and-app-user-privacy-policy)
 - **Google Play Billing** — In-app purchase processing — [Google Payments Privacy Notice](https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice)
 - **Android YouTube Player** — In-app YouTube video playback — [YouTube Terms of Service](https://www.youtube.com/t/terms)
 
 ### Advertising
 
-This App displays ads served by Google AdMob, including rewarded video ads. AdMob may use device identifiers to serve personalized ads. You can opt out via your device's ad settings (Settings → Google → Ads → Reset / Delete advertising ID).
+This App displays ads through Google AdMob and its mediation partners, including Unity Ads, in banner, interstitial, and rewarded formats. These ad providers may use device identifiers to serve personalized ads. You can opt out via your device's ad settings (Settings → Google → Ads → Reset / Delete advertising ID).
 
 ### In-App Purchases
 
@@ -162,12 +163,13 @@ ViewBoost（以下簡稱「本應用程式」）由 moooo_works 開發。本政�
 - **Firebase（Google）** — 身份驗證、Firestore 資料庫、Cloud Functions、Cloud Messaging（FCM）、App Check / Play Integrity — [Google 隱私權政策](https://policies.google.com/privacy?hl=zh-TW)
 - **Firebase Crashlytics** — 當應用程式發生 crash 時自動收集診斷資料,包含裝置型號、作業系統版本、App 版本、語系、匿名安裝 ID、以及 crash 前的操作序列。僅用於穩定性改進。 — [Crashlytics 資料收集說明](https://firebase.google.com/support/privacy?hl=zh-tw)
 - **Google AdMob** — 獎勵影片廣告及橫幅廣告。AdMob 可能使用 Android 廣告 ID 及裝置識別碼提供個人化廣告。 — [Google 隱私權政策](https://policies.google.com/privacy?hl=zh-TW) / [廣告個人化設定](https://support.google.com/ads/answer/2662922?hl=zh-TW)
+- **Unity Ads** — 透過 AdMob 中介提供橫幅、插頁及獎勵廣告。Unity 可能收集裝置識別碼（包含廣告 ID）、IP 位址與廣告互動資料，用於廣告投放及成效衡量。— [Unity 遊戲玩家與應用程式使用者隱私權政策](https://unity.com/legal/game-player-and-app-user-privacy-policy)
 - **Google Play Billing** — 應用程式內購處理 — [Google 付款隱私權聲明](https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice)
 - **Android YouTube Player** — 應用程式內 YouTube 影片播放 — [YouTube 服務條款](https://www.youtube.com/t/terms?hl=zh-TW)
 
 ### 廣告
 
-本應用程式顯示由 Google AdMob 提供的廣告,包含獎勵影片廣告。AdMob 可能使用裝置識別碼提供個人化廣告。您可透過裝置廣告設定選擇退出（設定 → Google → 廣告 → 重設/刪除廣告 ID）。
+本應用程式透過 Google AdMob 及其中介合作夥伴（包含 Unity Ads）顯示橫幅、插頁及獎勵影片廣告。這些廣告供應商可能使用裝置識別碼提供個人化廣告。您可透過裝置廣告設定選擇退出（設定 → Google → 廣告 → 重設/刪除廣告 ID）。
 
 ### 應用程式內購
 
